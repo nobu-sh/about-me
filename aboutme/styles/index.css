@@ -17,6 +17,7 @@ div.bgimg div.relcontainer {
   height: 50%;
   overflow: hidden;
 }
+
 div.bgimg img {
   position: absolute;
   width: 100%;
@@ -63,6 +64,16 @@ div.header {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
+@media screen and (max-width: 860px){
+  div.header {
+    height: 384px;
+  }
+}
+@media screen and (max-width: 500px){
+  div.header {
+    height: 300px;
+  }
+}
 div.header img {
   position: absolute;
   width: 100%;
@@ -75,6 +86,12 @@ div.header img {
 .innerClamp {
   padding: 0 64px 0 64px;
   width: 100%;
+}
+
+@media screen and (max-width: 860px){
+  .innerClamp {
+    padding: 0 16px 0 16px;
+  }
 }
 
 /* Blog Type */
@@ -124,6 +141,14 @@ div.contentImage div.imgContainer {
   width: 100%;
   height: 400px;
   overflow: hidden;
+}
+@media screen and (max-width: 860px){
+  div.contentImage {
+    padding: 32px 8px;
+  }
+  div.contentImage div.imgContainer {
+    height: 50vw;
+  }
 }
 div.contentImage div.imgContainer img {
   position: absolute;
@@ -221,6 +246,11 @@ div.skills ul {
   align-items: flex-start;
   padding-left: 40px;
 }
+@media screen and (max-width: 860px){
+  div.skills ul {
+    padding-left: 34px;
+  }
+}
 li.title {
   color: var(--accent);
   font-size: 18px;
@@ -235,4 +265,16 @@ li {
 }
 ul {
   list-style: none;
+}
+
+@media screen and (max-width: 400px){
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h5.info {
+    font-size: 14px;
+  }
 }
